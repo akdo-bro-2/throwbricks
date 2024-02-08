@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>throw bricks at pedestrians simulator [CLASSIC] (v2.0.6)</title>
+  <title>throw bricks at pedestrians simulator </title>
   <style>
     body {
-      color: #ffffff;
+      color: #d64a42;
       font-family: sans-serif;
       overflow: hidden;
       margin: 0;
       padding: 0;
     }
     :root, body.is-fullscreen {
-      background-color: #000000;
+      background-color: #a02222;
     }
     [hidden] {
       display: none !important;
@@ -46,7 +46,7 @@
       cursor: default;
       user-select: none;
       -webkit-user-select: none;
-      background-color: #000000;
+      background-color: #a02222;
     }
     #launch {
       background-color: rgba(0, 0, 0, 0.7);
@@ -65,7 +65,10 @@
       box-sizing: border-box;
     }
     #loading {
-      
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMDUyLjU1MjU1IiBoZWlnaHQ9Ijc2Ny4yNjcyNyIgdmlld0JveD0iMCwwLDEwNTIuNTUyNTUsNzY3LjI2NzI3Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyODYuMjc2MjcsMjAzLjYzMzY0KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0yMjAuMDgzMzMsMTg3LjU4MzMzYzAsMCAtMi4xNjY2NywtMS41OTk5NCAtMi4xNjY2NywtMy41YzAsLTMuNjUxMDUgMi4xNjY2NywtMTYuODMzMzMgMi4xNjY2NywtMTYuODMzMzNjMCwwIDAuMTcxMzUsLTEuNSAyLjE2NjY3LC0xLjVjMC45NjYwOSwwIDMuNDM3MTEsLTEuNDYwMTkgNS41MDE5NCwtMS4zOTM1NGMzLjgxOTU2LDAuMTIzMjggLTAuMDA3MjcsMS42OTk0NyA1LjA0OTkyLDIuMTczMTVjMi42MDM4MiwwLjI0Mzg5IDEwLjA3MTg4LC0wLjQzMjg4IDE0LjI3MzQ0LDAuMzdjMi43ODM4MSwwLjUzMTk2IDIuMzEwMzgsMi42OTUyNCA0LjYwNTM5LDIuNjY5OThjMC45OTg5NCwtMC4wMTEgMC42OTQyNiwtMy4wMTQ4MSAxLjU1OTksLTMuMDA2NWM0LjUwODE2LDAuMDQzMjggNi4xNzYwNywwLjY4NjkxIDYuMTc2MDcsMC42ODY5MWMwLDAgMywwLjczNzA4IDMsMS42NjY2N2MwLDAuNzMyMDQgMC4xNzE2NiwyLjI3MDU2IDAuMzQ2MjIsNC4xNjU0OGMwLjMwMzE2LDMuMjkxMDggMC42MTUwNSw3LjY1NzIyIDAuMDUxNDksMTAuNzQwNTVjLTAuNDIwODcsMi4zMDI2NyAtMy4zOTc3MSwzLjc2MDY0IC0zLjM5NzcxLDMuNzYwNjRjMCwwIC0zLjA4OTQ0LDEuNjY2NjcgLTUuODMzMzMsMS42NjY2N2MtMC45MDIyMiwwIC0xLjc2NzI2LDAuOTMzMjMgLTMuODY2NSwwLjg1MTQ3Yy00LjIwNzY4LC0wLjE2Mzg4IC0xMC44NTkxNywtMS4zODc5OSAtMTUuMTA0NDUsLTEuMjU1M2MtMC4zNjE0NywwLjAxMTMgLTIuNDQ0NjEsLTIuOTcwMiAtMi43NTM4OSwtMi45NDU5OWMtMS43NzUyNSwwLjEzODk1IC0wLjU5NDg3LDIuMjc0MyAtMS4xNjI0NiwzLjMzMTI5Yy0wLjQ0OTk3LDAuODM3OTQgLTIuNjAyMjMsMC42NzMwOCAtMy45MzEwMywwLjU5NTM2Yy00LjAzMjY1LC0wLjIzNTg2IC02LjY4MTY3LC0yLjI0MzQ5IC02LjY4MTY3LC0yLjI0MzQ5eiIgZmlsbD0iI2UwNjQ0NiIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTIzMy42ODc1LDE3OC41NjI1bDIuMTI1LC0wLjEyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDY0YTQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNTAuMTg3NSwxNzQuNjg3NWwzLC0wLjM3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDY0YTQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMjUuNDM3NSwxNzEuNDM3NWwyLjEyNSwwLjc1IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjRhNDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTIyNC44MTI1LDE4MC4wNjI1bDIuMTI1LDAuMTI1IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjRhNDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTI0MC4zMTI1LDE4My41NjI1bC0xLjYyNSwtMC4xMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q2NGE0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjU0LjMxMjUsMTgxLjMxMjVsLTEuMTI1LC0wLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q2NGE0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQxLjgxMjUsMTczLjU2MjVsMC4zNzUsLTAuMTI1IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjRhNDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTI1NS4xODc1LDE3MS44MTI1bDEuNSwwLjM3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDY0YTQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDIuNDM3NSwxNjguNjg3NWw1LDAuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMzIuNDM3NSwxNjguNTYyNWwyLjYyNSwwLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQ0LjMxMjUsMTg2LjU2MjVsMi42MjUsMC4zNzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjIwLjU2MjUsMTgyLjY4NzVsMy41LC0wLjEyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNTkuNjg3NSwxNzUuMzEyNWwzLjM3NSwtMC4yNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMzIuNjg3NSwxNzQuNDM3NWwxLjYyNSwtMC4xMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQ3LjY4NzUsMTgxLjE4NzVsLTEuNzUsMC4xMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjIzLjA2MjUsMTc1LjU2MjVsLTEuNjI1LDAuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0tMjg2LjI3NjI3LDU2My42MzM2NHYtNzY3LjI2NzI3aDEwNTIuNTUyNTV2NzY3LjI2NzI3eiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PC9nPjwvZz48L3N2Zz4=);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
     }
     .progress-bar-outer {
       border: 1px solid currentColor;
@@ -111,10 +114,10 @@
       border-radius: 4px;
     }
     .control-button:hover {
-      background: #ff4c4c26;
+      background: #e0644626;
     }
     .control-button.active {
-      background: #ff4c4c59;
+      background: #e0644659;
     }
     .fullscreen-button {
       background: white !important;
@@ -132,18 +135,18 @@
       cursor: auto;
     }
     .sc-monitor-root[data-opcode^="data_"] .sc-monitor-value-color {
-      background-color: #ff8c1a;
+      background-color: #e06446;
     }
     .sc-monitor-row-value-outer {
-      background-color: #fc662c;
+      background-color: #e06446;
     }
     .sc-monitor-row-value-editing .sc-monitor-row-value-outer {
-      background-color: #e25b27;
+      background-color: #c6583e;
     }
     
   </style>
-  <meta name="theme-color" content="#000000">
-  
+  <meta name="theme-color" content="#a02222">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMDUyLjU1MjU1IiBoZWlnaHQ9Ijc2Ny4yNjcyNyIgdmlld0JveD0iMCwwLDEwNTIuNTUyNTUsNzY3LjI2NzI3Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyODYuMjc2MjcsMjAzLjYzMzY0KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0yMjAuMDgzMzMsMTg3LjU4MzMzYzAsMCAtMi4xNjY2NywtMS41OTk5NCAtMi4xNjY2NywtMy41YzAsLTMuNjUxMDUgMi4xNjY2NywtMTYuODMzMzMgMi4xNjY2NywtMTYuODMzMzNjMCwwIDAuMTcxMzUsLTEuNSAyLjE2NjY3LC0xLjVjMC45NjYwOSwwIDMuNDM3MTEsLTEuNDYwMTkgNS41MDE5NCwtMS4zOTM1NGMzLjgxOTU2LDAuMTIzMjggLTAuMDA3MjcsMS42OTk0NyA1LjA0OTkyLDIuMTczMTVjMi42MDM4MiwwLjI0Mzg5IDEwLjA3MTg4LC0wLjQzMjg4IDE0LjI3MzQ0LDAuMzdjMi43ODM4MSwwLjUzMTk2IDIuMzEwMzgsMi42OTUyNCA0LjYwNTM5LDIuNjY5OThjMC45OTg5NCwtMC4wMTEgMC42OTQyNiwtMy4wMTQ4MSAxLjU1OTksLTMuMDA2NWM0LjUwODE2LDAuMDQzMjggNi4xNzYwNywwLjY4NjkxIDYuMTc2MDcsMC42ODY5MWMwLDAgMywwLjczNzA4IDMsMS42NjY2N2MwLDAuNzMyMDQgMC4xNzE2NiwyLjI3MDU2IDAuMzQ2MjIsNC4xNjU0OGMwLjMwMzE2LDMuMjkxMDggMC42MTUwNSw3LjY1NzIyIDAuMDUxNDksMTAuNzQwNTVjLTAuNDIwODcsMi4zMDI2NyAtMy4zOTc3MSwzLjc2MDY0IC0zLjM5NzcxLDMuNzYwNjRjMCwwIC0zLjA4OTQ0LDEuNjY2NjcgLTUuODMzMzMsMS42NjY2N2MtMC45MDIyMiwwIC0xLjc2NzI2LDAuOTMzMjMgLTMuODY2NSwwLjg1MTQ3Yy00LjIwNzY4LC0wLjE2Mzg4IC0xMC44NTkxNywtMS4zODc5OSAtMTUuMTA0NDUsLTEuMjU1M2MtMC4zNjE0NywwLjAxMTMgLTIuNDQ0NjEsLTIuOTcwMiAtMi43NTM4OSwtMi45NDU5OWMtMS43NzUyNSwwLjEzODk1IC0wLjU5NDg3LDIuMjc0MyAtMS4xNjI0NiwzLjMzMTI5Yy0wLjQ0OTk3LDAuODM3OTQgLTIuNjAyMjMsMC42NzMwOCAtMy45MzEwMywwLjU5NTM2Yy00LjAzMjY1LC0wLjIzNTg2IC02LjY4MTY3LC0yLjI0MzQ5IC02LjY4MTY3LC0yLjI0MzQ5eiIgZmlsbD0iI2UwNjQ0NiIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTIzMy42ODc1LDE3OC41NjI1bDIuMTI1LC0wLjEyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDY0YTQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNTAuMTg3NSwxNzQuNjg3NWwzLC0wLjM3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDY0YTQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMjUuNDM3NSwxNzEuNDM3NWwyLjEyNSwwLjc1IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjRhNDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTIyNC44MTI1LDE4MC4wNjI1bDIuMTI1LDAuMTI1IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjRhNDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTI0MC4zMTI1LDE4My41NjI1bC0xLjYyNSwtMC4xMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q2NGE0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjU0LjMxMjUsMTgxLjMxMjVsLTEuMTI1LC0wLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q2NGE0MiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQxLjgxMjUsMTczLjU2MjVsMC4zNzUsLTAuMTI1IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjRhNDIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTI1NS4xODc1LDE3MS44MTI1bDEuNSwwLjM3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDY0YTQyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDIuNDM3NSwxNjguNjg3NWw1LDAuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMzIuNDM3NSwxNjguNTYyNWwyLjYyNSwwLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQ0LjMxMjUsMTg2LjU2MjVsMi42MjUsMC4zNzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjIwLjU2MjUsMTgyLjY4NzVsMy41LC0wLjEyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNTkuNjg3NSwxNzUuMzEyNWwzLjM3NSwtMC4yNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMzIuNjg3NSwxNzQuNDM3NWwxLjYyNSwtMC4xMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQ3LjY4NzUsMTgxLjE4NzVsLTEuNzUsMC4xMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2EwMjIyMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjIzLjA2MjUsMTc1LjU2MjVsLTEuNjI1LDAuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTAyMjIyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0tMjg2LjI3NjI3LDU2My42MzM2NHYtNzY3LjI2NzI3aDEwNTIuNTUyNTV2NzY3LjI2NzI3eiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PC9nPjwvZz48L3N2Zz4=">
 </head>
 <body>
   <div id="app"></div>
@@ -160,9 +163,9 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
+    <h1 class="loading-text">Bricks are fun</h1>
     
-    
-    
+    <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
 
   <div id="error" class="screen" hidden>
@@ -221,18 +224,120 @@
       };
 
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
-      scaffolding.setAccentColor("#ff4c4c");
+      scaffolding.setAccentColor("#e06446");
 
-      scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@throw bricks at pedestrians simulator [CLASSIC] (v2.0.6) .sb3"));
+      try {
+        scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@throw bricks at pedestrians simulator (v2.1.0) remix (WEBSITE).sb3"));
+      } catch (error) {
+        console.error(error);
+      }
+
+      const greenFlagButton = document.createElement('img');
+      greenFlagButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.63 17.5"><path d="M.75 2a6.44 6.44 0 017.69 0h0a6.44 6.44 0 007.69 0v10.4a6.44 6.44 0 01-7.69 0h0a6.44 6.44 0 00-7.69 0" fill="#4cbf56" stroke="#45993d" stroke-linecap="round" stroke-linejoin="round"/><path stroke-width="1.5" fill="#4cbf56" stroke="#45993d" stroke-linecap="round" stroke-linejoin="round" d="M.75 16.75v-16"/></svg>');
+      greenFlagButton.className = 'control-button green-flag-button';
+      greenFlagButton.draggable = false;
+      greenFlagButton.addEventListener('click', () => {
+        scaffolding.greenFlag();
+      });
+      scaffolding.addEventListener('PROJECT_RUN_START', () => {
+        greenFlagButton.classList.add('active');
+      });
+      scaffolding.addEventListener('PROJECT_RUN_STOP', () => {
+        greenFlagButton.classList.remove('active');
+      });
+      scaffolding.addControlButton({
+        element: greenFlagButton,
+        where: 'top-left'
+      });
+
+      const pauseButton = document.createElement('img');
+      pauseButton.className = 'control-button pause-button';
+      pauseButton.draggable = false;
+      let isPaused = false;
+      pauseButton.addEventListener('click', () => {
+        vm.setPaused(!isPaused);
+      });
+      const updatePause = (_isPaused) => {
+        isPaused = _isPaused;
+        if (isPaused) {
+          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="16" height="16" viewBox="0 0 4.2333332 4.2333335" xmlns="http://www.w3.org/2000/svg"><path d="m3.95163484 2.02835365-1.66643921.9621191-1.66643913.96211911V.10411543l1.66643922.9621191z" fill="#ffae00"/></svg>');
+        } else {
+          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="16" height="16" viewBox="0 0 4.2333332 4.2333335" xmlns="http://www.w3.org/2000/svg"><g fill="#ffae00"><path d="M.389.19239126h1.2631972v3.8485508H.389zM2.5810001.19239126h1.2631972v3.8485508H2.5810001z"/></g></svg>');
+        }
+      }
+      vm.on('P4_PAUSE', updatePause);
+      updatePause();
+      scaffolding.addControlButton({
+        element: pauseButton,
+        where: 'top-left'
+      });
+
+      const stopAllButton = document.createElement('img');
+      stopAllButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill="#ec5959" stroke="#b84848" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M4.3.5h5.4l3.8 3.8v5.4l-3.8 3.8H4.3L.5 9.7V4.3z"/></svg>');
+      stopAllButton.className = 'control-button stop-all-button';
+      stopAllButton.draggable = false;
+      stopAllButton.addEventListener('click', () => {
+        scaffolding.stopAll();
+      });
+      scaffolding.addControlButton({
+        element: stopAllButton,
+        where: 'top-left'
+      });
+
+      if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
+        let isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        const fullscreenButton = document.createElement('img');
+        fullscreenButton.draggable = false;
+        fullscreenButton.className = 'control-button fullscreen-button';
+        fullscreenButton.addEventListener('click', () => {
+          if (isFullScreen) {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            }
+          } else {
+            if (document.body.requestFullscreen) {
+              document.body.requestFullscreen();
+            } else if (document.body.webkitRequestFullscreen) {
+              document.body.webkitRequestFullscreen();
+            }
+          }
+        });
+        const otherControlsExist = true;
+        const fillColor = otherControlsExist ? '#575E75' : '#d64a42';
+        const updateFullScreen = () => {
+          isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
+          document.body.classList.toggle('is-fullscreen', isFullScreen);
+          if (isFullScreen) {
+            fullscreenButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><g fill="' + fillColor + '" fill-rule="evenodd"><path d="M12.662 3.65l.89.891 3.133-2.374a.815.815 0 011.15.165.819.819 0 010 .986L15.467 6.46l.867.871c.25.25.072.664-.269.664L12.388 8A.397.397 0 0112 7.611V3.92c0-.341.418-.514.662-.27M7.338 16.35l-.89-.89-3.133 2.374a.817.817 0 01-1.15-.166.819.819 0 010-.985l2.37-3.143-.87-.871a.387.387 0 01.27-.664L7.612 12a.397.397 0 01.388.389v3.692a.387.387 0 01-.662.27M7.338 3.65l-.89.891-3.133-2.374a.815.815 0 00-1.15.165.819.819 0 000 .986l2.37 3.142-.87.871a.387.387 0 00.27.664L7.612 8A.397.397 0 008 7.611V3.92a.387.387 0 00-.662-.27M12.662 16.35l.89-.89 3.133 2.374a.817.817 0 001.15-.166.819.819 0 000-.985l-2.368-3.143.867-.871a.387.387 0 00-.269-.664L12.388 12a.397.397 0 00-.388.389v3.692c0 .342.418.514.662.27"/></g></svg>');
+          } else {
+            fullscreenButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><g fill="' + fillColor + '" fill-rule="evenodd"><path d="M16.338 7.35l-.89-.891-3.133 2.374a.815.815 0 01-1.15-.165.819.819 0 010-.986l2.368-3.142-.867-.871a.387.387 0 01.269-.664L16.612 3a.397.397 0 01.388.389V7.08a.387.387 0 01-.662.27M3.662 12.65l.89.89 3.133-2.374a.817.817 0 011.15.166.819.819 0 010 .985l-2.37 3.143.87.871c.248.25.071.664-.27.664L3.388 17A.397.397 0 013 16.611V12.92c0-.342.418-.514.662-.27M3.662 7.35l.89-.891 3.133 2.374a.815.815 0 001.15-.165.819.819 0 000-.986L6.465 4.54l.87-.871a.387.387 0 00-.27-.664L3.388 3A.397.397 0 003 3.389V7.08c0 .341.418.514.662.27M16.338 12.65l-.89.89-3.133-2.374a.817.817 0 00-1.15.166.819.819 0 000 .985l2.368 3.143-.867.871a.387.387 0 00.269.664l3.677.005a.397.397 0 00.388-.389V12.92a.387.387 0 00-.662-.27"/></g></svg>');
+          }
+        };
+        updateFullScreen();
+        document.addEventListener('fullscreenchange', updateFullScreen);
+        document.addEventListener('webkitfullscreenchange', updateFullScreen);
+        if (otherControlsExist) {
+          fullscreenButton.className = 'control-button fullscreen-button';
+          scaffolding.addControlButton({
+            element: fullscreenButton,
+            where: 'top-right'
+          });
+        } else {
+          fullscreenButton.className = 'standalone-fullscreen-button';
+          document.body.appendChild(fullscreenButton);
+        }
+      }
 
       vm.setTurboMode(false);
       if (vm.setInterpolation) vm.setInterpolation(true);
       if (vm.setFramerate) vm.setFramerate(30);
-      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(false);
+      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
         fencing: true,
         miscLimits: true,
-        maxClones: 300,
+        maxClones: 9999999999,
       });
       if (vm.setCompilerOptions) vm.setCompilerOptions({
         enabled: true,
@@ -241,7 +346,7 @@
       if (vm.renderer.setMaxTextureDimension) vm.renderer.setMaxTextureDimension(2048);
 
       if (typeof ScaffoldingAddons !== 'undefined') {
-        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":true,"pause":false});
+        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":false,"unsafeCloudBehaviors":false,"pause":true});
       }
 
       scaffolding.setExtensionSecurityManager({
@@ -251,6 +356,12 @@
       for (const extension of []) {
         vm.extensionManager.loadExtensionURL(extension);
       }
+
+      vm.runtime.on('PROJECT_RUN_STOP', () => {
+        if (!vm.isPaused || !vm.isPaused()) {
+          window.close();
+        }
+      });
 
     } catch (e) {
       handleError(e);
@@ -303,7 +414,7 @@
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (false) {
+      if (true) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
